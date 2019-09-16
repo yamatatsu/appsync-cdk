@@ -5,8 +5,6 @@
     "appsync-cdk": "bin/appsync-cdk.js"
   },
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"
   },
@@ -20,9 +18,9 @@
     "typescript": "~3.6.2"
   },
   "dependencies": {
-    "@aws-cdk/aws-sns": "^1.8.0",
-    "@aws-cdk/aws-sns-subscriptions": "^1.8.0",
-    "@aws-cdk/aws-sqs": "^1.8.0",
+    "@aws-cdk/aws-appsync": "^1.8.0",
+    "@aws-cdk/aws-dynamodb": "^1.8.0",
+    "@aws-cdk/aws-iam": "^1.8.0",
     "@aws-cdk/core": "^1.8.0"
   }
 }
