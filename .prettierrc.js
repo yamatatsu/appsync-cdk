@@ -1,4 +1,1 @@
-module.exports = {
-  trailingComma: "all",
-  semi: false,
-}
+module.exports = {};
