@@ -76,16 +76,6 @@ export class AppSyncPlayGroundStack extends cdk.Stack {
           new appsync.PartitionKeyStep("itemId").auto(),
           appsync.Values.projecting()
         ),
-        //   requestMappingTemplate: `{
-        //   "version": "2017-02-28",
-        //   "operation": "PutItem",
-        //   "key": {
-        //     "${tableName}Id": { "S": "$util.autoId()" }
-        //   },
-        //   "attributeValues": {
-        //     "name": $util.dynamodb.toDynamoDBJson($ctx.args.name)
-        //   }
-        // }`,
         responseMappingTemplate: appsync.MappingTemplate.dynamoDbResultItem(),
       })
     );
